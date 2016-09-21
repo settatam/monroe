@@ -1,0 +1,354 @@
+.slide-container {
+	position: relative;
+
+	a {
+		position:absolute;
+		top: 50%;
+		width: 40px;
+		display: block;
+		height: 100%;
+		z-index: 1500;
+		height: 40px;
+		margin-top: -20px;
+
+		span {
+		    display: block;
+		    position: absolute;
+		    right: 0;
+		    top: 50%;
+		    z-index: 1500;
+		    height: 62px;
+		    width: 37px;
+		    margin-top: -30px;
+		    text-indent: -10000px;
+		}
+
+		 @media only screen and (max-width: 700px) {
+	    	display: none;
+	    }
+	}
+
+	.prev {
+		left: 0;
+
+		span {
+			left: 18px;
+			@include iconSprite(-232px, -130px)
+		}
+	}
+
+	.next {
+		right: 0;
+
+		span {
+		right: 18px;
+			@include iconSprite(-274px, -130px)
+		}
+	}
+
+	.slide-caption {
+		
+		position: absolute;
+		color: #fff;
+		margin-top: -63px;
+		top: 100%;
+		right: 0;
+		text-transform: uppercase;
+		padding: 30px 65px;
+		z-index: 25;
+		font-weight: 400;
+		letter-spacing: 0.125em;
+		font-size: 16px;
+	    line-height: 15px;
+	    text-align: center;
+	    -webkit-transition: all 0.25s ease;
+	    -moz-transition: all 0.25s ease;
+	    -ms-transition: all 0.25s ease;
+	    -o-transition: all 0.25s ease;
+	    transition: all 0.25s ease;
+
+	}
+
+	.slide-count {
+	display: none;
+		position: absolute;
+		top: 50%;
+		z-index: 1500;
+		color: #8f8f8f;
+		right: 130px;
+		font-weight: bold;
+		margin-top: 46px;
+
+		font-weight: 600;
+		font-style: italic;
+		letter-spacing: 2px;
+		-webkit-transition: all 0.25s ease;
+	    -moz-transition: all 0.25s ease;
+	    -ms-transition: all 0.25s ease;
+	    -o-transition: all 0.25s ease;
+	    transition: all 0.25s ease; 
+
+		@media only screen and (max-width: 700px) {
+	    	display: none;
+	    }
+	}
+
+
+
+	a {
+		z-index: 500;
+	}
+
+
+	li {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		overflow: hidden;
+
+		img {
+			display: block;
+			position: relative;
+		}
+			
+	}
+
+
+
+	ul {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+
+
+		li.current {
+			opacity: 1 ;
+			overflow: hidden;
+			z-index: 5;
+		}
+	}
+
+}
+
+.residences-img {
+		height: 350px;
+		overflow: hidden;
+}
+
+
+	
+
+
+	
+	
+
+
+
+	.navOutNext {
+
+		-webkit-animation: slideOutLeft 0.8s forwards ease-in-out;
+		animation: slideOutLeft 0.8s forwards ease-in-out;
+	}
+
+	.navInNext {
+			opacity: 1;
+		  z-index: 0;
+		  -webkit-animation: show 0.8s forwards ease-in-out;
+		  animation: show 0.1s forwards ease-in-out; 
+	}
+
+	.navOutPrev {
+		z-index: 0 !important;
+		-webkit-animation: hide 0.8s forwards ease-in-out;
+		animation: hide 0.8s forwards ease-in-out;
+	}
+
+	.navInPrev {
+		z-index: 10;
+		opacity: 1 !important;
+		-webkit-animation: slideOutRight 0.8s forwards ease-in-out;
+		animation: slideOutRight 0.8s forwards ease-in-out;
+	}@-webkit-keyframes decreaseHeight {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		height: 0;
+	}
+}
+
+@keyframes decreaseHeight {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		height: 0;
+	}
+}
+
+
+@-webkit-keyframes show {
+	0% {
+		opacity: 0;
+	}
+	1%,100% {
+		opacity: 1;
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	1%,100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes hide {
+	0%,99% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes hide {
+	0%,99% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes increaseHeight {
+	from {
+		height: 0;
+	}
+	to {
+		height: 100%;
+	}
+}
+
+@keyframes increaseHeight {
+	from {
+		height: 0;
+	}
+	to {
+		height: 100%;
+	}
+}
+
+@-webkit-keyframes slideOutLeft {
+	from {width: 100%;} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		width: 0;}
+}
+
+@keyframes slideOutLeft {
+	from {width: 100%;} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		width:0;
+		
+	}
+}
+
+@-webkit-keyframes slideOutRight {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		-webkit-transform: translateX(100%);
+	}
+}
+
+@keyframes slideOutRight {
+	from {width:0} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		width:100%;
+	}
+}
+
+.display-image {
+	.slide-container {
+		
+		height: 218px;
+
+		@media all and (min-width: 700px){
+
+			height: 327px;
+		}
+
+		@media all and (min-width: 769px){
+
+			height: 549px;
+		}
+
+		@media all and (min-width: 1100px){
+
+			height: 549px;
+		}
+
+
+		a {
+			width: 11%;
+			background-color: white;
+			top: auto;
+			bottom: 0;
+			height: 50px;
+			-webkit-transition: all 0.25s ease;
+		    -moz-transition: all 0.25s ease;
+		    -ms-transition: all 0.25s ease;
+		    -o-transition: all 0.25s ease;
+		    transition: all 0.25s ease;
+
+
+			span {
+				top: 36%;
+			}
+
+			&:hover {
+				background-color: darken(#222, 5%);
+				-webkit-transition: all 0.25s ease;
+			    -moz-transition: all 0.25s ease;
+			    -ms-transition: all 0.25s ease;
+			    -o-transition: all 0.25s ease;
+			    transition: all 0.25s ease;
+						}
+
+		}
+
+		.next {
+		left: 11%;
+		width: 10.5%;
+
+			span {
+				@include iconSprite(-245px, -128px);
+				right: 40%;
+			}
+
+		}
+
+		.slide-caption, .slide-count {
+			display: none;
+		}
+
+		.prev {
+			left: 0;
+			span {
+				@include iconSprite(-232px, -50px);
+				left: 40%;
+			}
+		}
+	}
+
+	.left-display {
+		.next {
+			left: auto;
+			right: 0;
+		}
+
+		.prev {
+			left: auto;
+			right: 10.5%;
+		}
+	}
+}

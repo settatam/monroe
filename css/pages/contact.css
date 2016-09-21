@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* .squaredOne */
+.squaredOne {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  display: block; }
+  .squaredOne span {
+    margin-left: 20px;
+    white-space: nowrap;
+    cursor: pointer; }
+  .squaredOne label {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    cursor: pointer;
+    border: 1px solid #ccc; }
+    .squaredOne label:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../images/form_check.png");
+      background-size: 10px 10px;
+      opacity: 0; }
+    .squaredOne label:hover::after {
+      opacity: 0.3; }
+  .squaredOne input[type=checkbox] {
+    visibility: hidden; }
+    .squaredOne input[type=checkbox]:checked + label:after {
+      opacity: 1; }
+
+/* end .squaredOne */
+/* .squaredTwo */
+.squaredTwo {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  display: block; }
+  .squaredTwo span {
+    margin-left: 20px;
+    white-space: nowrap;
+    cursor: pointer; }
+  .squaredTwo label {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    cursor: pointer;
+    border: 1px solid #ccc; }
+    .squaredTwo label:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../images/form_check.png");
+      background-size: 10px 10px;
+      opacity: 0; }
+    .squaredTwo label:hover::after {
+      opacity: 0.3; }
+  .squaredTwo input[type=checkbox] {
+    visibility: hidden; }
+    .squaredTwo input[type=checkbox]:checked + label:after {
+      opacity: 1; }
+
+/* end .squaredOne */
+.checkboxes span {
+  color: #5f514d;
+  margin-left: 20px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  display: block;
+  margin-top: -10px;
+  cursor: pointer; }
+
+.contact input[type="text"], .contact textarea {
+  border: 1px solid white;
+  margin-bottom: 30px; }
+
+.contact .intro-container {
+  height: auto; }
+  .contact .intro-container h3 {
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 0.1975em;
+    text-transform: uppercase;
+    line-height: 26px; }
+  .contact .intro-container ul {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding-left: 70px; }
+    .contact .intro-container ul a {
+      color: #5f514d; }
+    .contact .intro-container ul li {
+      padding: 10px; }
+      .contact .intro-container ul li ul {
+        padding: 10px; }
+
+.contact input[type="text"] {
+  height: 40px; }
+
+.contact textarea {
+  height: 147px;
+  background-color: #F3F1EC;
+  width: 100%;
+  padding: 10px; }
+
+.checkbox {
+  position: relative;
+  padding: 5px 0; }
+
+.checkbox {
+  /* checkbox aspect */
+  /* checked mark aspect changes */ }
+  .checkbox [type="checkbox"]:not(:checked),
+  .checkbox [type="checkbox"]:checked {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+  .checkbox [type="checkbox"]:not(:checked) + label,
+  .checkbox [type="checkbox"]:checked + label {
+    position: relative;
+    padding: 0 0 0 25px;
+    cursor: pointer;
+    display: inline-block; }
+  .checkbox [type="checkbox"]:not(:checked) + label:before,
+  .checkbox [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3); }
+  .checkbox [type="checkbox"]:not(:checked) + label:after,
+  .checkbox [type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    font-size: 9px;
+    line-height: 0.8;
+    color: #5f514d;
+    transition: all .2s; }
+  .checkbox [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0); }
+  .checkbox [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1); }
+
+.error {
+  border: 1px solid red !important; }

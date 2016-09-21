@@ -1,0 +1,110 @@
+.slide-content {
+    overflow:hidden;
+
+    .slide {
+        position: absolute;
+        z-index: 10;
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 100%;
+        top: 0px;
+        background-repeat: no-repeat;
+        will-change: transform;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        display: none;
+    }
+    
+
+    .arrow {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 0px;
+    width: 25%;
+    height: 100%;
+    z-index: 15;
+
+            .caption {
+            display: inline-block;
+            position: absolute;
+            background-color: white;
+            padding: 17px 23px;
+            z-index: 16;
+            top: 50%;
+            margin-top: -23px;
+            color: #886c54;
+            white-space: nowrap;
+            font-size: 11px;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+    }
+
+    .arrow.right-arrow:hover .caption { right: 35px; }
+    .arrow.left-arrow:hover .caption { left: 35px; }
+
+    .right-arrow {
+        right: 0;
+         a {
+            right: 0;
+           @include iconSprite(-262px, -115px);
+         }
+
+         a.gallery-hover {
+            background-color: white !important;
+            @include iconSprite(-256px, -195px);
+         }
+
+         .caption {
+            right: -50px;
+            width: 70px;
+            background-color: $white_1;
+         }
+    }
+
+
+    .left-arrow {
+            left: 0;
+             a {
+                left: 0;
+                @include iconSprite(-236px, -115px);
+            }
+
+            a.gallery-hover {
+            background-color: white !important;
+            ;
+         }
+
+            .caption {
+               left: -50px;
+               width: 70px;
+               background-color: $white_1;
+             }
+    }
+
+    .arrow a {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    background-color: white;
+    width: 40px;
+    height: 60px;
+    top: 50%;
+    margin-top: -30px;
+
+
+}
+
+
+}
+
+.slider {
+	position: relative;
+}
+
+

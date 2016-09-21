@@ -1,0 +1,66 @@
+
+.home {
+
+	.hero {
+		height: 820px;
+		top: -4px;
+	}
+	
+	.homebody {
+		min-height: 100vh;
+	}
+
+
+	.intro-header {
+		h2, h3 {
+			text-align: center;
+			color: #51514d;
+			font-weight: 100;
+		}
+
+		h2 {
+			color: #000;
+			font-size: 50px;
+			font-weight: 100;
+			font-family: "abril-display-1","abril-display-2";
+		}
+	}
+
+
+	.comms {
+		width: 1000px;
+		margin: 0 auto;
+
+		margin-top: 30px;
+
+		.oneCommunity {
+
+			a {
+				color: $white_1;
+				text-decoration: none;
+				margin-bottom: 10px;
+			}
+
+			margin-bottom: 20px;
+		}
+	}
+
+	.qdh-btm {
+		h2 {
+			text-align: center;
+		}
+	}
+
+	.img-panel {
+		background-position: 50% 80%;
+		background-image: url('../images/home/monroe-home.jpg');
+		background-repeat: no-repeat;
+	}
+
+}
+
+.displayNone {
+	iframe {
+		display: none;
+	}
+}

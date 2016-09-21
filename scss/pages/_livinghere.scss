@@ -1,0 +1,25 @@
+.living-here {
+	h4{
+		letter-spacing: 0.125em;
+		padding-bottom: 25px;
+		text-transform: uppercase;
+	}
+
+	.img-panel {
+		background-size: cover;
+		bacground-position: 50% 50%;
+		height: 640px;
+	}
+
+	.aerial-2 {
+		background-image: url('../images/livinghere/live-in-monroe.jpg');
+	}
+
+	.golfers {
+		background-image: url('../images/livinghere/live-in-monroe-2.jpg');
+	}
+
+	.aerial {
+		background-image: url('../images/livinghere/aerial-2.jpg');
+	}
+}

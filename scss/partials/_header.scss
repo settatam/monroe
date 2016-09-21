@@ -1,0 +1,178 @@
+
+.main-header {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    height: 112px;
+    background-color: white;
+    z-index: 1000;
+
+     @media only screen and (min-width: 767px) {
+        height: 112px;
+    }
+
+
+    .sitelogo {
+    	position: relative;
+        float: left;
+    	display: block;
+    	width: 380px;
+    	height: 112px;
+
+        @media only screen and (min-width: 1280px) {
+            width: 380px;
+        }
+
+        @media only screen and (min-width: 1400px) {
+            width: 432px;
+        }
+    	
+        background-color: #1f8263;
+
+        .logo {
+            @include iconSprite(-1px,-40px);
+            text-indent: -9999px;
+            height: 73px;
+            width: 256px;
+            margin-top: 21px;
+        }
+    }
+
+    nav {
+    	position: relative;
+        background-color: #f1f1ec;
+        height: auto;
+        z-index: 50;
+        width: 100%;
+
+        .on {
+            font-weight: 600;
+        }
+
+    	a {
+    		text-decoration: none;
+    		background-color: transparent;
+    		padding: 15px 23px 15px 10px;
+    		color: $nav_color;
+    		position: relative;
+            text-transform: uppercase;
+            letter-spacing: 0.175em;
+            font-weight: 100;
+            font-size: 0.965em;
+            font-family: $base_font_family;
+            display: block;
+            opacity: 0;
+
+             @media only screen and (min-width: 767px) {
+                font-size: 14px;
+                background-color: $white_1;
+                font-weight: 100;
+                padding: 4px 23px 10px 10px;
+                font-weight: 400;
+
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+
+
+    	}
+
+         @media only screen and (min-width: 767px) {
+                position: relative;
+                background-color: white;
+
+            }
+
+
+    }
+
+     .toggle-topbar.menu-icon {
+
+        @include iconSprite(-193px, -16px)
+        position: absolute;
+        width: 40px;
+        height: 17px;
+        top: 14px;
+        left: 5px;
+        padding: 0;
+        left: 50%;
+        margin-left: -20px;
+
+
+        a {
+            text-indent: -9999px;
+        }
+    }
+
+      .title-area {
+            width: 100%;
+            position: relative;
+            height: 42px;
+            background-color: white;
+            border-bottom: 1px solid #f8f8f8;
+
+            @media only screen and (min-width: 767px) {
+                display:none;
+            }
+        }
+
+}
+
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        box-shadow: 0 3px 2px -2px #ccc;
+    }
+
+    header {
+    ul {
+
+        @media only screen and (max-width: 767px) {
+            box-shadow: 0 2px 3px -2px #ccc;
+        }
+        
+        li {
+            
+            display: block;
+
+            @media only screen and (min-width: 1100px) {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.main-nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    display: block;
+    top: 112px;
+
+    @media only screen and (min-width: 1100px) {
+        padding-top: 40px;
+        padding-bottom: 0;
+        position: relative;
+        background-color: white;
+        display: inherit;
+        float: right;
+        width: 700px;
+        top: 0;
+
+    }
+
+    @media only screen and (min-width: 1300px) {
+        width: 890px;
+        position: relative;
+        top: 0;
+    }
+
+
+}

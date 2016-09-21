@@ -1,0 +1,183 @@
+#map_holder {
+	height: 312px;
+
+	@media only screen and (min-width: 768px) {
+		height: 612px;
+	}
+}
+
+#map_directions_holder {
+	padding: 25px 0;
+	max-width: 450px;
+	margin: 0 auto;
+
+	.adp-placemark {
+	&:first-child {
+		td {
+			&:first-child {
+				display: none;
+			}
+
+			&:nth-of-type(2){
+				font-size: 18px;
+				font-weight: 400;
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+		}
+	}
+	
+	img {
+		visibility: hidden !important;
+	}
+	}
+}
+
+.map-from, .map-to {
+	
+}
+
+.intro-header {
+	h3{
+		span {
+			@media only screen and (max-width: 500px) {
+				display: block;
+			}
+		}
+
+		.hide-bull {
+			@media only screen and (max-width: 500px) {
+				display: none;
+			}
+			display: inline;
+		}
+	}
+}
+
+.adp-summary {
+	padding-left: 75px !important;
+	padding-bottom: 10px !important;
+}
+
+.adp-directions {
+	.adp-substep {
+	font-family: proxima-nova;
+	font-size: 15px;
+	padding-left: 75px;
+		&:first-child {
+			display: none;
+		}
+
+		&:nth-child(2){
+			display: none;
+		}
+
+		&:nth-child(3){
+			font-weight: 600;
+		}
+
+		&:nth-child(4){
+			font-weight: 100;
+		}
+	
+		display: block;
+		paddding-top: 10px;
+		padding-bottom: 10px;
+		
+	}
+}
+
+.adp {
+color: white !important;
+	table {
+		background: transparent;
+		color: white !important;
+	}
+}
+
+.adp-step, .adp-substep {
+	border-top: none !important;
+}
+
+.adp-placemark {
+	border: none !important;
+
+
+}
+
+.direction-buttons {
+	padding-bottom: 75px;
+	width: 100%;
+	max-width: 450px;
+	margin: 0 auto;
+	
+	button {
+		display: block;
+		background-color: white;
+		width: 100%;
+		margin-bottom: 20px;
+		color: #5f514d;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 15px;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-weight: 100;
+
+		&:hover {
+			background-color: #5f514d;
+			color: white;
+		}
+
+		@media only screen and (max-width: 1000px) {
+			width: 94%;
+			margin: 0 auto 20px auto;
+		}
+	}
+	
+}
+
+.directions_style {
+	display: none;
+	padding: 0 25px;
+
+}
+
+
+.directions {
+	#model-inquiry {
+		@media only screen and (max-width: 600px) {
+			.columns {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+
+
+
+.lead-thru-direction {
+	background-image: url('../images/directions/leadthru.jpg');
+}
+
+.lead-thru-lifestyle {
+	background-image: url('../images/lifestyle/lead-thru-lifestyle.jpg');
+}
+
+.lead-thru-residences {
+	background-image: url('../images/residences/lead-thru.jpg');
+}
+
+.lead-thru-amenities {
+	background-image: url('../images/amenities/lead-thru.jpg');
+	background-position: 50% 100%;
+}
+
+.map_error {
+	color: red;
+	padding: 15px;
+	text-align: center;
+	display: none;
+}

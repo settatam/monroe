@@ -1,0 +1,114 @@
+#map_holder {
+  height: 312px; }
+  @media only screen and (min-width: 768px) {
+    #map_holder {
+      height: 612px; } }
+
+#map_directions_holder {
+  padding: 25px 0;
+  max-width: 450px;
+  margin: 0 auto; }
+  #map_directions_holder .adp-placemark:first-child td:first-child {
+    display: none; }
+  #map_directions_holder .adp-placemark:first-child td:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  #map_directions_holder .adp-placemark img {
+    visibility: hidden !important; }
+
+@media only screen and (max-width: 500px) {
+  .intro-header h3 span {
+    display: block; } }
+
+.intro-header h3 .hide-bull {
+  display: inline; }
+  @media only screen and (max-width: 500px) {
+    .intro-header h3 .hide-bull {
+      display: none; } }
+
+.adp-summary {
+  padding-left: 75px !important;
+  padding-bottom: 10px !important; }
+
+.adp-directions .adp-substep {
+  font-family: proxima-nova;
+  font-size: 15px;
+  padding-left: 75px;
+  display: block;
+  paddding-top: 10px;
+  padding-bottom: 10px; }
+  .adp-directions .adp-substep:first-child {
+    display: none; }
+  .adp-directions .adp-substep:nth-child(2) {
+    display: none; }
+  .adp-directions .adp-substep:nth-child(3) {
+    font-weight: 600; }
+  .adp-directions .adp-substep:nth-child(4) {
+    font-weight: 100; }
+
+.adp {
+  color: white !important; }
+  .adp table {
+    background: transparent;
+    color: white !important; }
+
+.adp-step, .adp-substep {
+  border-top: none !important; }
+
+.adp-placemark {
+  border: none !important; }
+
+.direction-buttons {
+  padding-bottom: 75px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto; }
+  .direction-buttons button {
+    display: block;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #5f514d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 100; }
+    .direction-buttons button:hover {
+      background-color: #5f514d;
+      color: white; }
+    @media only screen and (max-width: 1000px) {
+      .direction-buttons button {
+        width: 94%;
+        margin: 0 auto 20px auto; } }
+
+.directions_style {
+  display: none;
+  padding: 0 25px; }
+
+@media only screen and (max-width: 600px) {
+  .directions #model-inquiry .columns {
+    padding-left: 0;
+    padding-right: 0; } }
+
+.lead-thru-direction {
+  background-image: url("../images/directions/leadthru.jpg"); }
+
+.lead-thru-lifestyle {
+  background-image: url("../images/lifestyle/lead-thru-lifestyle.jpg"); }
+
+.lead-thru-residences {
+  background-image: url("../images/residences/lead-thru.jpg"); }
+
+.lead-thru-amenities {
+  background-image: url("../images/amenities/lead-thru.jpg");
+  background-position: 50% 100%; }
+
+.map_error {
+  color: red;
+  padding: 15px;
+  text-align: center;
+  display: none; }

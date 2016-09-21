@@ -1,0 +1,311 @@
+.residences .gallery-buttons {
+  max-width: 1920px;
+  margin: 0 auto; }
+  .residences .gallery-buttons button {
+    color: #7a98ab;
+    text-transform: capitalize;
+    letter-spacing: 0.025em;
+    padding: 0 14px; }
+  .residences .gallery-buttons .on {
+    color: #5f514d;
+    font-weight: 400; }
+  .residences .gallery-buttons .sortby {
+    text-decoration: none; }
+  @media only screen and (max-width: 700px) {
+    .residences .gallery-buttons {
+      padding: 50px 10px 0 10px;
+      text-align: center; } }
+  @media only screen and (min-width: 768px) {
+    .residences .gallery-buttons {
+      padding-right: 0; } }
+  @media only screen and (min-width: 1280px) {
+    .residences .gallery-buttons {
+      padding-right: 83px; } }
+
+.residences .model-gallery {
+  max-width: 1920px;
+  width: 100%;
+  padding: 130px;
+  margin: 0 auto; }
+
+.residences .image_collection {
+  max-width: initial; }
+
+.residences .slide-container {
+  height: 350px; }
+
+.residences .gradient:before {
+  content: " ";
+  background: -webkit-linear-gradient(legacy-direction(180deg), #f1f1ec 0, rgba(255, 255, 255, 0.9) 65%, transparent 100%);
+  background: linear-gradient(180deg, #f1f1ec 0, rgba(255, 255, 255, 0.9) 65%, transparent 100%); }
+
+.residences .gradient .firststeps a p {
+  font-weight: 400; }
+
+.collections-area-residences {
+  max-width: 1920px; }
+  @media only screen and (max-width: 700px) {
+    .collections-area-residences {
+      padding-top: 50px; } }
+  .collections-area-residences .model-list {
+    margin-bottom: 75px; }
+  .collections-area-residences .model-image {
+    position: relative; }
+  @media only screen and (min-width: 1280px) {
+    .collections-area-residences {
+      padding-left: 48px;
+      padding-right: 48px; } }
+  .collections-area-residences a {
+    text-decoration: none;
+    color: #000; }
+    .collections-area-residences a .model-box-image {
+      height: 300px; }
+      @media only screen and (min-width: 1280px) {
+        .collections-area-residences a .model-box-image {
+          height: 350px; } }
+  .collections-area-residences .model-name {
+    height: 94px; }
+    @media only screen and (max-width: 1200px) {
+      .collections-area-residences .model-name .large-6 {
+        width: 100%; } }
+  .collections-area-residences .model-desc {
+    height: 140px;
+    text-align: center;
+    margin-top: -55px;
+    top: 100%;
+    border: 5px solid #f1f1ec;
+    width: 92%;
+    position: absolute;
+    margin-left: 25px;
+    margin-right: 25px;
+    z-index: 10; }
+    .collections-area-residences .model-desc h6 {
+      font-weight: 300;
+      font-size: 12px;
+      padding-top: 15px;
+      letter-spacing: 0.1875em; }
+      @media only screen and (max-width: 600px) {
+        .collections-area-residences .model-desc h6 {
+          height: 40px; } }
+    .collections-area-residences .model-desc .desc {
+      font-size: 21px;
+      display: block;
+      padding-top: 5px; }
+  .collections-area-residences .text {
+    font-weight: 100;
+    color: #000;
+    height: 283px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    padding: 25px 17px;
+    width: 100%;
+    font-size: 16px; }
+    @media only screen and (min-width: 600px) {
+      .collections-area-residences .text {
+        padding: 100px 25px; } }
+    .collections-area-residences .text p {
+      line-height: 26px;
+      font-size: 14.5px; }
+  .collections-area-residences .elevation {
+    height: 55px;
+    color: #fff;
+    padding-top: 15px;
+    text-align: right;
+    padding-right: 25px;
+    letter-spacing: 0.125em;
+    font-weight: 300; }
+  .collections-area-residences h2 {
+    font-family: Exemplar-lite;
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 0.0275em;
+    text-align: center;
+    font-family: exemplar-lite; }
+    @media only screen and (min-width: 1200px) {
+      .collections-area-residences h2 {
+        font-size: 40px;
+        text-align: left; } }
+  .collections-area-residences .pricing {
+    color: #000;
+    padding-top: 5px;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.1875em;
+    font-size: 13px;
+    text-align: left; }
+    @media only screen and (min-width: 1200px) {
+      .collections-area-residences .pricing {
+        font-size: 14px;
+        text-align: left;
+        padding-top: 12px; } }
+  @media only screen and (min-width: 1280px) {
+    .collections-area-residences .columns {
+      padding-left: 100px;
+      padding-right: 100px; } }
+
+.model-tab-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 0px auto; }
+  .model-tab-wrapper .all {
+    display: none; }
+
+.qdh h2 {
+  font-size: 28px;
+  padding-top: 15px;
+  text-align: center; }
+  @media only screen and (min-width: 1500px) {
+    .qdh h2 {
+      font-size: 28px;
+      text-align: left;
+      padding-top: 27px; } }
+
+@media only screen and (max-width: 1500px) {
+  .qdh .pricing {
+    padding-top: 5px;
+    text-align: center; } }
+
+@media only screen and (max-width: 1500px) {
+  .qdh .large-6 {
+    width: 100%; } }
+
+.model-box-image {
+  background-size: cover;
+  background-position: 50% 30%;
+  background-repeat: no-repeat; }
+  @media only screen and (min-width: 769px) {
+    .model-box-image {
+      background-size: 100%;
+      background-repeat: no-repeat; } }
+
+.width-50 {
+  width: 50%; }
+
+.width-33 {
+  width: 33.33333%; }
+
+.model-tab-wrapper .on {
+  background-color: #eaeee7;
+  font-weight: 600; }
+
+.model-tab-wrapper a {
+  color: #000;
+  float: left;
+  text-align: center;
+  padding: 30px 0px 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.125em; }
+  @media only screen and (min-width: 768px) {
+    .model-tab-wrapper a {
+      height: 75px; } }
+  @media only screen and (min-width: 960px) {
+    .model-tab-wrapper a {
+      height: 75px; } }
+
+.model-tab-wrapper a span {
+  font-size: 10px;
+  padding-bottom: 4px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 5px;
+  letter-spacing: 0.25em; }
+  @media only screen and (min-width: 960px) {
+    .model-tab-wrapper a span {
+      font-size: 12px; } }
+
+.model-tab-wrapper a span span.type {
+  font-size: 12px;
+  font-weight: 300;
+  color: #7ba08d;
+  padding-top: 5px; }
+
+.images-container {
+  overflow: hidden; }
+  .images-container .slide {
+    position: absolute;
+    z-index: 10;
+    height: 530px;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    top: 0px;
+    background-repeat: no-repeat;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    display: none; }
+  .images-container .arrow {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 0px;
+    width: 25%;
+    height: 300px;
+    z-index: 15; }
+    .images-container .arrow .caption {
+      display: inline-block;
+      position: absolute;
+      background-color: #000;
+      padding: 17px 23px;
+      z-index: 16;
+      top: 50%;
+      margin-top: -23px;
+      color: #886c54;
+      white-space: nowrap;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.5px; }
+  .images-container .arrow.right-arrow:hover .caption {
+    right: 35px; }
+  .images-container .arrow.left-arrow:hover .caption {
+    left: 35px; }
+  .images-container .right-arrow {
+    right: 0; }
+    .images-container .right-arrow a {
+      right: 0; }
+    .images-container .right-arrow a.gallery-hover {
+      background-color: #000 !important; }
+    .images-container .right-arrow .caption {
+      right: -50px;
+      width: 50px; }
+  .images-container .left-arrow {
+    left: 0; }
+    .images-container .left-arrow a {
+      left: 0; }
+    .images-container .left-arrow a.gallery-hover {
+      background-color: #000 !important; }
+    .images-container .left-arrow .caption {
+      left: -50px;
+      width: 50px; }
+  .images-container .arrow a {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    background-color: rgba(37, 33, 23, 0.5);
+    width: 35px;
+    height: 60px;
+    top: 50%;
+    margin-top: -30px; }
+
+.model-tab-wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 130px;
+  padding-right: 130px; }
+
+.model-tabs {
+  border-bottom: 5px solid #eaeee7; }
+
+#site-plans {
+  display: none; }
+
+#qdh-listings {
+  display: none; }

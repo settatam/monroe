@@ -1,0 +1,50 @@
+
+@mixin whiteMagGlass {
+    width: 18px;
+    height: 18px;
+    @include iconSprite(-437px, -41px);
+}
+
+@mixin whiteSelectDownArrow {
+    width: 15px;
+    height: 9px;
+    @include iconSprite(-166px, -324px);
+}
+
+@mixin blackSelectDownArrow {
+    width: 15px;
+    height: 9px;
+    @include iconSprite(-166px, -359px);
+}
+
+
+@mixin grayCircledArrow {
+    width: 33px;
+    height: 33px;
+    @include iconSprite(-388px, -367px);
+}
+
+@mixin grayCircledEnvelope {
+    width: 33px;
+    height: 33px;
+    @include iconSprite(-424px, -367px);
+}
+
+@mixin grayCircledMapPin {
+    width: 33px;
+    height: 33px;
+    @include iconSprite(-460px, -367px);
+}  
+
+
+@mixin curlyArrowLink {
+    width:16px;
+    height:13px;
+    @include iconSprite(-440px,-70px);
+}
+
+@mixin grayRightArrow {
+    width: 18px;
+    height: 14px;
+    @include iconSprite(-24px, -290px);
+}

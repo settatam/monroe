@@ -1,0 +1,239 @@
+
+.main-footer {
+    width: 100%;
+    color: $white_1;    
+	background-color: #1d1d1c;
+	padding: 47px 25px 50px 25px;
+
+	@media only screen and (min-width: 769px) {
+		padding: 47px 55px 50px 55px;
+        height: 294px;
+	}
+
+    .footer-logo {
+    	display: block;
+    	width: 214px;
+    	height: 65px;
+
+    	@media only screen and (max-width: 1050px) {
+			margin: 0 auto;
+		}
+
+    	span {
+	    	width: 214px;
+	    	height: 65px;
+    		@include iconSprite(-278px, -40px);
+    		display: block;
+    	}
+    }
+
+    @media only screen and (max-width: 1050px) {
+        .large-4 {
+            width: 100%;
+        }
+    }
+
+    
+    .logo-section {
+    	p {
+    		font-size: 16px;
+    		font-weight: 100;
+    		text-align: center;
+    		color: #fff;
+    		padding-top: 10px;
+    		letter-spacing: 0.0425em;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+    		.telephone {
+    			color: #fff;
+    			text-decoration: none;
+    			position: relative;
+    			font-size: 24px;
+    			font-weight: 100;
+    			letter-spacing: 0.0425em;
+                display: block;
+
+                span {
+                    display: none;
+                }
+
+
+
+    			@media only screen and (max-width: 769px) {
+    				padding: 15px 20px 15px 35px;
+    				border: 3px solid #fff;
+    				width: 255px;
+    				margin: 20px auto 20px auto;
+    				
+	    			
+	    			&:after {
+	    				content: " ";
+	    				position: absolute;
+	    				@include iconSprite(-5px, -201px);
+	    				width: 23px;
+						height: 22px;
+						left: 20px;
+						top: 17px;
+	    			}
+    			}
+
+    			
+
+    			@media only screen and (min-width: 769px) {
+					border: none;
+					font-size: 13px;
+                    line-height: 22px;
+                    font-weight: 100;
+                    display: inline;
+                    font-size: 16px;
+
+                     span {
+                        display: inline;
+                    }
+				}
+    		}
+
+    		@media only screen and (min-width: 1050px) {
+				text-align: left;
+			}
+    	}
+
+    	
+    }
+
+    .social {
+    	text-align: center;
+    	padding-top: 30px;
+    	
+    	a {
+    		display: inline-block;
+    		padding: 0 11px;
+
+    		@media only screen and (min-width: 768px) {
+    			padding: 0 14px;
+    		}
+
+    		span {
+    			display: block;
+    		}
+    	}
+
+    	.facebook {
+    		span {
+    			@include iconSprite(-23px, -129px);
+    			width: 15px;
+				height: 21px;
+
+				&:hover {
+					@include iconSprite(-5px, -165px);
+				}
+    		}
+    	}
+
+    	.twitter {
+    		span {
+    			@include iconSprite(-50px, -130px);
+    			width: 27px;
+				height: 21px;
+
+				&:hover {
+					@include iconSprite(-50px, -166px);
+				}
+    		}
+    	}
+
+    	.pinterest {
+    		span {
+    			@include iconSprite(-104px, -130px);
+    			width: 22px;
+				height: 21px;
+
+				&:hover {
+					@include iconSprite(-104px, -166px);
+				}
+    		}
+    	}
+
+    	.toll {
+    		span {
+    			@include iconSprite(-153px, -128px);
+    			width: 28px;
+				height: 24px;
+
+				&:hover {
+					@include iconSprite(-153px, -164px);
+				}
+    		}
+    	}
+
+    	.instagram {
+    		span {
+    			@include iconSprite(-203px, -128px);
+    			width: 28px;
+				height: 24px;
+
+				&:hover {
+					@include iconSprite(-203px, -164px);
+				}
+    		}
+    	}
+    }
+
+    .footer-bull {
+        font-size: 10px;
+    }
+
+    .links {
+    	text-align: center;
+    	padding-top: 30px;
+    	margin-left: -14px;
+
+    	@media only screen and (min-width: 1050px) {
+			text-align: left;
+			margin-left: 0;
+		}
+
+    	
+    	a {
+
+    		display: inline-block;
+    		width: auto;
+    		padding: 0 10px;
+    		color: #f1f1ec;
+    		text-decoration: underline;
+    		font-weight: 100;
+    		font-size: 12px;
+    		position: relative;
+            text-transform: uppercase;
+            letter-spacing: 0.125em;
+
+    		&:hover {
+    			color: #9cc0d6;
+    			text-decoration: none;
+    		}
+
+    		&:first-child {
+                padding-left: 0;
+    			
+                &:before {
+    				content: " ";
+    			}
+    		}
+
+    		&:last-child {
+    			&:after {
+    				content: " ";
+    				width: 20px;
+				    height: 20px;
+				    position: absolute;
+				    @include iconSprite(-5px, -231px);
+				    right: -20px;
+    			}
+    		}
+    	}
+    }
+}
